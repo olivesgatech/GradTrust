@@ -58,4 +58,4 @@ Qualitative analysis of mispredictions on AlexNet (top row), MaxVit-t (middle ro
 
 ## Questions?
 
-If you have any questions, regarding the dataset or the code, you can contact the authors [Mohit](mohit.p@gatech.edu), or even better open an issue in this repo and we'll do our best to help.
+If you have any questions, regarding the dataset or the code, you can contact the authors [(mohit.p@gatech.edu)](mohit.p@gatech.edu), or even better open an issue in this repo and we'll do our best to help.
