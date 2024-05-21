@@ -1,12 +1,35 @@
 # GradTrust
-[MIPR 2024 Invited] Code for the paper: Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks.
+[MIPR 2024 Invited Paper] Code for the paper: Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks.
 
-Work conducted at [OLIVES@GaTech]((https://alregib.ece.gatech.edu))
+Work conducted at [OLIVES@GaTech](https://alregib.ece.gatech.edu). Arxiv paper available at (Will update this once it is published on Arxiv)
+
+Official code repository for the paper: M. Prabhushankar and G. AlRegib, "Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks", In 2024 IEEE 7th International Conference on Multimedia Information Processing and Retrieval (MIPR), San Jose, CA, Aug. 7-9, 2024 (Invited Paper).
 
 ![Concept image showcasing value of GradTrust over Softmax](figs/Concept.png)
 Scatter plot between the proposed GradTrust on x-axis and softmax confidence on y-axis on ImageNet validation dataset using ResNet-18. Green points indicate correctly classified data and red indicates misclassified data. Representative misclassified and correctly images in the numbered boxes are displayed alongside the scatterplot, with their predictions (in red) and labels (in blue).
+
 ## Abstract
-he widespread adoption of deep neural networks in machine learning calls for an objective quantification of esoteric trust. In this paper we propose **GradTrust**, a classification trust measure for large-scale neural networks at inference. The proposed method utilizes variance of counterfactual gradients, i.e. the required changes in the network parameters if the label were different. We show that GradTrust is superior to existing techniques for detecting misprediction rates on 50000 images from ImageNet validation dataset. Depending on the network, GradTrust detects images where either the ground truth is incorrect or ambiguous, or the classes are co-occurring. We extend GradTrust to Video Action Recognition on Kinetics-400 dataset. We showcase results on 14 architectures pretrained on ImageNet and 5 architectures pretrained on Kinetics-400. We observe the following: (i) simple methodologies like negative log likelihood and margin classifiers outperform state-of-the-art uncertainty and out-of-distribution detection techniques for misprediction rates, and (ii) the proposed GradTrust is in the Top-2 performing methods on 37 of the considered 38 experimental modalities.
+The widespread adoption of deep neural networks in machine learning calls for an objective quantification of esoteric trust. In this paper we propose **GradTrust**, a classification trust measure for large-scale neural networks at inference. The proposed method utilizes variance of counterfactual gradients, i.e. the required changes in the network parameters if the label were different. We show that GradTrust is superior to existing techniques for detecting misprediction rates on 50000 images from ImageNet validation dataset. Depending on the network, GradTrust detects images where either the ground truth is incorrect or ambiguous, or the classes are co-occurring. We extend GradTrust to Video Action Recognition on Kinetics-400 dataset. We showcase results on 14 architectures pretrained on ImageNet and 5 architectures pretrained on Kinetics-400. We observe the following: (i) simple methodologies like negative log likelihood and margin classifiers outperform state-of-the-art uncertainty and out-of-distribution detection techniques for misprediction rates, and (ii) the proposed GradTrust is in the Top-2 performing methods on 37 of the considered 38 experimental modalities.
+
+## Usage
+The repository provides a demo code that quantifies prediction trust using GradTrust as well as 8 comparison metrics for any given pretrained model.
+
+### Getting Started
+Clone the repository and run the following commands to create a conda envirnoment and install all dependencies.
+'''
+conda create -n gradtrust python=3.6
+conda activate gradtrust
+cd GradTrust
+conda install pytorch torchvision -c pytorch
+pip install -r requirements.in
+'''
+
+### Evaluation
+The code requires the user to feed in the network that requires Trust Quantification. It is specifically written for classification pretrained models available at [PyTorch's Torchvision Library](https://pytorch.org/vision/stable/models.html). Feed in the name of the network as defined in the above link.
+
+'''
+python demo.py --network 'resnet18'
+'''
 
 ## Results
 ### Quantitative Results
