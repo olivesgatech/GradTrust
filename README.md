@@ -8,7 +8,7 @@ he widespread adoption of deep neural networks in machine learning calls for an 
 
 ## Results
 ### Quantitative Results
-
+![Quantitative results showcasing value of GradTrust across 14 networks](figs/Quantitative.png)
 Results on 50000 images from ImageNet 2012 validation dataset. AUAC and AUFC values are shown for each metric. The top-2 AUAC and AUFC values for every network are bolded. Rows are ordered based on increasing overall accuracy.
 
 ### Qualitative Results
