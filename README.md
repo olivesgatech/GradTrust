@@ -33,7 +33,7 @@ python demo.py --network 'resnet18'
 
 ## Results on Demo code
 
-For the default network (vit_b_16), the following results will be printed for the water-bird.JPEG image:
+For the default network > vit_b_16, the following results will be printed for the water-bird.JPEG image:
 ```
 The prediction is : [129] with GradTrust: 994.78125
 Comparison Metrics:
@@ -56,4 +56,6 @@ Results on 50000 images from ImageNet 2012 validation dataset. AUAC and AUFC val
 ![Qualitative results showcasing value of GradTrust on two networks](figs/Qualitative.png)
 Qualitative analysis of mispredictions on AlexNet (top row), MaxVit-t (middle row) and ensemble mispredictions across all networks (bottom row). All displayed images have high softmax and ordered in ascending order of GradTrust.
 
+## Questions?
 
+If you have any questions, regarding the dataset or the code, you can contact the authors [Mohit](mohit.p@gatech.edu), or even better open an issue in this repo and we'll do our best to help.
