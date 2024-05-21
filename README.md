@@ -31,7 +31,23 @@ The code requires the user to feed in the network that requires Trust Quantifica
 python demo.py --network 'resnet18'
 ```
 
-## Results
+## Results on Demo code
+
+For the default network (vit_b_16), the following results will be printed for the water-bird.JPEG image:
+```
+The prediction is : [129] with GradTrust: 994.78125
+Comparison Metrics:
+Softmax Confidence: [0.904579]
+Entropy: [-0.9696515]
+Margin: [0.9039816]
+Log-likelihood: 9.182098
+ODIN: 0.001096937
+MC-Dropout: [-0.90219054]
+Purview (Initial layers): -0.0009888242
+Purview (Final layers): -0.0025726024
+Grad Norm: -0.009952871
+```
+## Results when applied to Full ImageNet Validation set
 ### Quantitative Results
 ![Quantitative results showcasing value of GradTrust across 14 networks](figs/Quantitative.png)
 Results on 50000 images from ImageNet 2012 validation dataset. AUAC and AUFC values are shown for each metric. The top-2 AUAC and AUFC values for every network are bolded. Rows are ordered based on increasing overall accuracy.
