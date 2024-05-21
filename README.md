@@ -1,5 +1,7 @@
 # GradTrust
-[MIPR 2024 Invited] Code for the paper: Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks
+[MIPR 2024 Invited] Code for the paper: Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks.
+
+Work conducted at [OLIVES@GaTech]((https://alregib.ece.gatech.edu))
 
 ![Concept image showcasing value of GradTrust over Softmax](figs/Concept.png)
 Scatter plot between the proposed GradTrust on x-axis and softmax confidence on y-axis on ImageNet validation dataset using ResNet-18. Green points indicate correctly classified data and red indicates misclassified data. Representative misclassified and correctly images in the numbered boxes are displayed alongside the scatterplot, with their predictions (in red) and labels (in blue).
