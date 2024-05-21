@@ -16,20 +16,20 @@ The repository provides a demo code that quantifies prediction trust using GradT
 
 ### Getting Started
 Clone the repository and run the following commands to create a conda envirnoment and install all dependencies.
-'''
+```
 conda create -n gradtrust python=3.6
 conda activate gradtrust
 cd GradTrust
 conda install pytorch torchvision -c pytorch
 pip install -r requirements.in
-'''
+```
 
 ### Evaluation
 The code requires the user to feed in the network that requires Trust Quantification. It is specifically written for classification pretrained models available at [PyTorch's Torchvision Library](https://pytorch.org/vision/stable/models.html). Feed in the name of the network as defined in the above link.
 
-'''
+```
 python demo.py --network 'resnet18'
-'''
+```
 
 ## Results
 ### Quantitative Results
