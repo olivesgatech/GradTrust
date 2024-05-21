@@ -25,7 +25,7 @@ pip install -r requirements.in
 ```
 
 ### Evaluation
-The code requires the user to feed in the network that requires Trust Quantification. It is specifically written for classification pretrained models available at [PyTorch's Torchvision Library](https://pytorch.org/vision/stable/models.html). Feed in the name of the network as defined in the above link.
+The code requires the user to feed in the network for Trust Quantification. It is specifically written for pretrained models available at [PyTorch's Torchvision Library](https://pytorch.org/vision/stable/models.html). Feed in the name of the network as defined in the above link. For instance, if we the user wants trust quantification for ResNet-18, run the following:
 
 ```
 python demo.py --network 'resnet18'
