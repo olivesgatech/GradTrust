@@ -1,8 +1,7 @@
 # GradTrust
 [MIPR 2024 Invited Paper] Code for the paper: Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks.
 
-Work conducted at [OLIVES@GaTech](https://alregib.ece.gatech.edu). Arxiv paper available at (Will update this once it is published on Arxiv)
-
+Work conducted at [OLIVES@GaTech](https://alregib.ece.gatech.edu). Arxiv paper available at [https://arxiv.org/pdf/2405.13758](https://arxiv.org/pdf/2405.13758)
 Official code repository for the paper: M. Prabhushankar and G. AlRegib, "Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks", In 2024 IEEE 7th International Conference on Multimedia Information Processing and Retrieval (MIPR), San Jose, CA, Aug. 7-9, 2024 (Invited Paper).
 
 ![Concept image showcasing value of GradTrust over Softmax](figs/Concept.png)
